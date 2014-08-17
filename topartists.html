@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>LastGraphs</title>
+    <meta name="language" content="english"/>
+    <meta name="description" content="LastGraphs - visualization of Last fm listening habits"/>
+    <meta name="keywords" content="Last fm graphs of music listening" />
+    <link rel="shortcut icon" href="data/img/music.png"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script type="text/javascript" src="js/lib/jquery/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/lib/lastfm/lastfm.api.md5.js"></script>
+    <script type="text/javascript" src="js/lib/lastfm/lastfm.api.cache.js"></script>
+    <script type="text/javascript" src="js/lib/lastfm/lastfm.api.js"></script>
+    <script type="text/javascript" src="js/lib/chart/Chart.js"></script>
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <script type="text/javascript" src="js/lib/uikit/uikit.min.js"></script>
+    <script type="text/javascript" src="js/topartists.js"></script>
+</head>
+<body>
+    <div id="keep-inside">
+        <h1 id="title">LastGraphs</h1>
+        <h2 id="title2"></h2>
+        <form id="user-form" class="uk-form"> Last.fm Username: <input type="text" name="username"></form>
+        <form id="results-form" class="uk-form"> Results Displayed (2-50): <input type="text" name="result_num"></form>
+        <br>
+        <br>
+        <button type="button" id="enter" class="uk-button" onclick="getArtists()">View My Listening</button>
+        <br>
+        <br>
+        <button type="button" class="uk-button" onclick="reloadPage()">View Another User</button>
+        <br>
+        <br>
+        <p id="welcome">Welcome to LastGraphs. Just enter your <a href="http://www.last.fm" target="_blank">Last.fm</a> username to view your top played artists.<br>More features are coming soon...or, maybe not. We'll see.</p>
+        <p id="invalid-num"></p>
+        <p id="data-failed"></p>
+        <br>
+        <canvas id = "myChart"></canvas>
+        <p id="follow-up"></p>
+        <p id="footer">Build By: Andrew Hoskins<br>Chart Framework: <a href="http://www.chartjs.org/" target="_blank">Chart.js</a><br>LastFm API Wrapper: <a href="https://github.com/fxb/javascript-last.fm-api" target="_blank">github.com/fxb</a></p>
+    <div>
+
+</body>
+</html>

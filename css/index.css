@@ -1,0 +1,63 @@
+root { 
+    display: block;
+}
+
+#topartists {
+	color: #ADAD88;
+}
+
+#user-form {
+    display: inline-block;
+}
+
+#results-form {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+#title {
+	margin-left: auto;
+	margin-right: auto;
+    font-weight: bold;
+}
+
+#title2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#myChart {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+html {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color:#646464;
+}
+
+/*keep everything 2% inside the boundaries of the html document*/
+#keep-inside {
+    position: static;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 100vh;
+}
+#footer {
+    position: fixed;
+    bottom: 0px;
+    font-weight: bold;
+}
+#follow-up {
+    position: fixed;
+    bottom: 2pc;
+}
+#invalid-num {
+    font-weight: bold;
+}
+#data-failed {
+    font-weight: bold;
+}
